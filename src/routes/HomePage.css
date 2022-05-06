@@ -1,0 +1,28 @@
+.homePage{
+    background: #F5F5F5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.homePage .logo{
+    margin-bottom: 4%;
+}
+.homePage button{
+    background: #261BB1;
+    width: 332px;
+    height: 62px;
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 45px;
+    cursor: pointer;
+
+}
+.homePage h3 {
+    font-size: 36px;
+}

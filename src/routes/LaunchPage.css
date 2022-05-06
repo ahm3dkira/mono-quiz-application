@@ -1,0 +1,8 @@
+.launchPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(168.1deg, #0183FB 4.76%, #2521D7 52.88%, #271CD6 67.26%, #261BAC 100%);
+}

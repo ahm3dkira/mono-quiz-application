@@ -1,0 +1,66 @@
+.quizPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 50px;
+    height: 100vh;
+    position: relative;
+}
+.quizPage .questionText{
+    padding: 35px;
+}
+.quizPage .header{
+    background: #261BB1;
+    width: 332px;
+    height: 62px;
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.quizPage .answers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.quizPage .answers li{
+    width: 332.0000000000003px;
+    height: 43.99998474121097px;
+    left: 48px;
+    top: 293px;
+    border-radius: 9px;
+    background: #B2AEE44D;
+    margin-bottom: 9px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quizPage .next {
+    position: absolute;
+    bottom: 35px;
+}
+.quizPage .next button{
+    width: 212.0000000000005px;
+    height: 58.99998474121095px;
+    background: #261BB1;
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+.quizPage .answers li.answered{
+    background: #EB8D37;
+
+}

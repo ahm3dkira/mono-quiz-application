@@ -1,18 +1,34 @@
+import React,{
+  useState,
+  useEffect,
+} from 'react';
 import { Routes, Route } from 'react-router-dom'; 
 
-import Header from './components/Header';
-
 import HomePage from './routes/HomePage';
-import ContactUs from './routes/ContactUs';
+import LaunchPage from './routes/LaunchPage';
+import QuizPage from './routes/QuizPage';
+import ResultPage from './routes/ResultPage';
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => { 
+    // just to show the unnecessary loading screen
+    setTimeout(() => {
+      setLoading(false);
+    } , 150);
+
+  } , []);
   return (
     <div className="app">
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-      </Routes>
+      {
+        loading ? <LaunchPage /> : <>
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/quiz" element={<QuizPage />} />
+          <Route path="/result" element={<ResultPage />} />
+        </Routes>
+        </> }
     </div>
   );
 }
